@@ -5,27 +5,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Favorite Restaurants</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color: #ffffff;
+            padding: 10px;
+        }
+        nav a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            margin-right: 20px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .content {
+            margin: 20px;
+        }
+    </style>
 </head>
 <body>
-    <header>
+    <!-- Navigation bar -->
+    <nav>
+        <a href="#home">Home</a> 
+        <a href="#articles">Articles</a> 
+        <a href="#about">About Author</a>
+    </nav>
+    <hr> <!-- Horizontal line -->
+
+    <!-- Main content -->
+    <section id="home">
         <h1>My Favorite Restaurants</h1>
-        <nav>
-            <ul>
-                <li><a href="#filipino">Filipino</a></li>
-                <li><a href="#korean">Korean</a></li>
-                <li><a href="#japanese">Japanese</a></li>
-            </ul>
-        </nav>
-    </header>
+    </section>
     
+
+    <div class="content">
+        <p>Nothing brings people together like good food. I would like to share to you my favorite restaurants from the place where I grew up, in the Philippines. Whenever you decide to travel in the Philippines, try visiting this restaurants that I will recommened to you.</p>
+
+        <h2>Best Places to Dine:</h2>
+        <ol>
+            <li>Kuya J</li>
+            <li>Yakiniku</li>
+            <li>Tokyo Tokyo</li>
+        </ol>
+    </div>
+
     <main>
-        <section id="filipino">
+        <section id="articles">
             <h2>Filipino Restaurants</h2>
             <div class="restaurant">
                 <h3>Kuya J</h3>
                 <img src="images/kuya_j.jpg" alt="Kuya J Restaurant">
-                <p>Kuya J offers a wide range of Filipino classics. Their crispy pata and halo-halo espesyal are especially popular.</p>
-                
+                <p>Kuya J Restaurant, formerly known as “Ang Kan-anan ni Kuya J”, started as a humble eatery along the streets of Cebu. After some time, the Kuya J’s dishes spread not only in Cebu but in different parts of the Philippines. It is well-known for bringing in delightful comfort Filipino dishes, like crispy pata, halo-halo espesyal, kare-kare, bulalo etc.  </p>
+            
+            <h2>What I like in this restaurant:</h2>
+                <ol>
+                    <li>Crispy Pata</li>
+                    <li>Sizzling Sisig with Egg</li>
+                    <li>Lechon Belly</li>
+                </ol>
+
             <hr> <!-- Horizontal line -->
             </div>
         </section>
@@ -33,9 +81,18 @@
         <section id="korean">
             <h2>Korean Restaurants</h2>
             <div class="restaurant">
-                <h3>Yakiniky</h3>
+                <h3>Yakiniku</h3>
                 <img src="images/Yakiniku.jpg" alt="Yakiniku Restaurant">
-                <p>Yakiniku is famous for its unlimited samgyupsal!</p>
+                <p>Yakiniku Restaurant is one of the famous Korean restaurants in the Olongapo City, Philippines. This popular restaurant offers an authentic Korea cuisines alongside the star attraction of all-you-can-eat samgyupsal. Yakiniku serves up a variety of traditional Korean dishes, including bulgogi, bibimbap and kimchi. It provides a truly satisfying culinary for lovers of Korean food.</p>
+                
+                <h2>What I like in this restaurant:</h2>
+                <ol>
+                    <li>Pork and beef Samgyupsal</li>
+                    <li>Kimchi</li>
+                    <li>Bulgogi</li>
+                </ol>
+
+
             <hr> <!-- Horizontal line -->
             </div>
         </section>
@@ -45,15 +102,26 @@
             <div class="restaurant">
                 <h3>Tokyo Tokyo</h3>
                 <img src="images/Tokyo_Tokyo.jpg" alt="Sakura Sushi Restaurant">
-                <p>TokyoTokyo offers a wide variety of bento meals and other Japanese dishes in a cozy setting. Their bento meals are a must-try.</p>
+                <p>TokyoTokyo is a well-known restaurant chain in the Philippines. It offers a range of traditional Japanese meals with an emphasis on affordability and accessibility. Popular dishes including ramen, sushi, tempura, and donburi (rice bowls) are available on their menu. This restaurant aims to satisfy local palates while offering genuine sense of Japan.</p>
                 
+                <h2>What I like in this restaurant:</h2>
+                <ol>
+                    <li>Beef Yakiniku Wagyu Rice</li>
+                    <li>Prawn Tempura</li>
+                    <li>Red tea</li>
+                </ol>
+
             <hr> <!-- Horizontal line -->
             </div>
         </section>
     </main>
     
-    <footer>
-        <p>© 2024 Gelo Resuello. All rights reserved.</p>
+    <!-- Footer -->
+    <footer id="about">
+        <p>Angelo Resuello</p>
+        <p>Email: angelo.resuello@my.marianas.edu</p>
+        <p>Phone: 670-287-5183</p>
     </footer>
+
 </body>
 </html>
